@@ -1,0 +1,1390 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <script src="js/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script>
+    <script>
+        var require = {
+            "baseUrl": "en_US"
+        };
+    </script>
+    <meta charset="utf-8" />
+    <meta name="description" content="Default Description" />
+    <meta name="keywords" content="Magento, Varien, E-commerce" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Schapiro</title>
+    <link rel="stylesheet" type="text/css" media="all" href="css/7f1244e9d69882935a7a77ec3d8947e2.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" rel="stylesheet" type="text/css" href="css/modal-compare.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="//fonts.googleapis.com/css?family=Rubik:300,400,500,700,900|Roboto+Slab:100,300,400,700" />
+    <link rel="stylesheet" type="text/css" media="print" href="css/print.min.css" />
+    <script type="text/javascript" src="js/11fee9f897af0efdd8771349ebd7ddf5.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="/magento_63844/newsletter_popup/css/index/" />
+    <link rel="stylesheet" type="text/css" media="all" href="/magento_63844/theme_options/css/index/" />
+    <link rel="icon" type="image/x-icon" href="/magento_63844/pub/media/theme_options/default/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/magento_63844/pub/media/theme_options/default/favicon.ico" />
+</head>
+
+<body data-container="body" data-mage-init='{"loaderAjax": {}, "loader": { "icon": "en_US/images/loader-2.gif"}}' class="cms-home cms-index-index page-layout-1column">
+    <script>
+        var compareProductAddAjax = 1;
+    </script>
+    <script type="text/x-magento-init">
+        {"*": {"showCompareProduct": []}}
+    </script>
+    <div id="productComparePopup" style="display: none;"></div>
+    <div class="page-wrapper">
+        <script type="text/javascript">
+            window.onload = function() {
+
+                function fadeOut(el) {
+                    el.style.opacity = 1;
+
+                    var last;
+                    var tick = function() {
+                        el.style.opacity = +el.style.opacity - (new Date() - last) / 600;
+                        last = +new Date();
+
+                        if (+el.style.opacity > 0) {
+                            (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 100);
+                        } else {
+                            el.style.display = "none";
+                        }
+                    };
+                    tick();
+                }
+
+                var pagePreloaderId = document.getElementById("page-preloader");
+                setTimeout(
+                    function() {
+                        fadeOut(pagePreloaderId)
+                    }, 1000);
+            };
+        </script>
+        <div id="page-preloader">
+            <div class="cssload-spinner">
+                <div class="cssload-ball cssload-ball-1"></div>
+                <div class="cssload-ball cssload-ball-2"></div>
+                <div class="cssload-ball cssload-ball-3"></div>
+                <div class="cssload-ball cssload-ball-4"></div>
+            </div>
+        </div>
+        <header class="page-header">
+            <div class="rd-navbar">
+                <div class="rd-navbar-panel">
+                    <div class="panel page-header__panel">
+                        <div class="container">
+                            <div class="header-top-wrap">
+                                <div class="header-switchers">
+                                    <div class="switcher currency switcher-currency" id="switcher-currency"><strong class="label switcher-label"><span>Currency</span></strong>
+                                        <div class="actions dropdown options switcher-options">
+                                            <div class="action toggle switcher-trigger" id="switcher-currency-trigger"><strong class="language-USD"><span>USD - US Dollar</span></strong>
+                                            </div>
+                                            <ul class="dropdown switcher-dropdown" data-mage-init='{"dropdownDialog":{
+            "appendTo":"#switcher-currency > .options",
+            "triggerTarget":"#switcher-currency-trigger",
+            "closeOnMouseLeave": false,
+            "triggerClass":"active",
+            "parentClass":"active",
+            "buttons":null}}'>
+                                                <li class="currency-GBP switcher-option"><a href="#" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/directory\/currency\/switch\/","data":{"currency":"GBP","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}'>GBP - British Pound Sterling</a>
+                                                </li>
+                                                <li class="currency-EUR switcher-option"><a href="#" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/directory\/currency\/switch\/","data":{"currency":"EUR","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}'>EUR - Euro</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-header__content">
+                        <div class="container">
+                            <div class="container-top-wrap"><strong class="logo"><img src="magento_63844/pub/media/theme_options/default/logo.png"
+             alt="Magento Commerce"
+             width="307"             height="53"        /></strong>
+                                <div class="block block-search">
+                                    <button class="block-search-toggle" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span>
+                                    </button>
+                                    <div class="block block-title"><strong>Search</strong>
+                                    </div>
+                                    <div class="block block-content">
+                                        <form class="form minisearch" id="search_mini_form" action="/magento_63844/catalogsearch/result/" method="get">
+                                            <div class="field search">
+                                                <label class="label" for="search" data-role="minisearch-label"><span></span>
+                                                </label>
+                                                <div class="control">
+                                                    <input id="search" data-mage-init='{"quickSearch":{
+                                "formSelector":"#search_mini_form",
+                                "url":"/magento_63844/search/ajax/suggest/",
+                                "destinationSelector":"#search_autocomplete"}
+                           }' type="text" name="q" value="" placeholder="Search entire store here..." class="input-text" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off" />
+                                                    <div id="search_autocomplete" class="search-autocomplete"></div>
+                                                    <div class="nested"><a class="action advanced" href="/magento_63844/catalogsearch/advanced/" data-action="advanced-search">
+        Advanced Search    </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="actions">
+                                                <button type="submit" title="Search" class="action search"><span>Search</span>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="sm-header_customer-menu-container">
+                                    <button class="sm-header_customer-menu-toggle" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span>
+                                    </button>
+                                    <div class="sm-header_customer-menu">
+                                        <div class="greet welcome" data-bind="scope: 'customer'">
+                                            <!-- ko if: customer().fullname  -->
+                                            <span data-bind="text: new String('Welcome, %1!').replace('%1', customer().firstname)"></span>
+                                            <!-- /ko -->
+                                            <!-- ko ifnot: customer().fullname  -->
+                                            <span data-bind="html:'Welcome to our online store!'"></span>
+                                            <!-- /ko -->undefined</div>undefined
+                                        <script type="text/x-magento-init">
+                                            { "*": { "Magento_Ui/js/core/app": { "components": { "customer": { "component": "Magento_Customer/js/view/customer" } } } } }
+                                        </script>undefined
+                                        <ul class="header links">
+                                            <div class="greet welcome" data-bind="scope: 'customer'">
+                                                <!-- ko if: customer().fullname  -->
+                                                <span data-bind="text: new String('Welcome, %1!').replace('%1', customer().firstname)"></span>
+                                                <!-- /ko -->
+                                                <!-- ko ifnot: customer().fullname  -->
+                                                <span data-bind="html:'Welcome to our online store!'"></span>
+                                                <!-- /ko -->
+                                            </div>
+                                            <script type="text/x-magento-init">
+                                                { "*": { "Magento_Ui/js/core/app": { "components": { "customer": { "component": "Magento_Customer/js/view/customer" } } } } }
+                                            </script>
+                                            <li>
+                                                <a href="/magento_63844/customer/account/">My Account</a>
+                                            </li>
+                                            <li class="item link compare" data-bind="scope: 'compareProducts'" data-role="compare-products-link">
+                                                <a class="action compare" title="Compare Products" data-bind="attr: {'href': compareProducts().listUrl}">
+        Compare        
+        <span class="counter qty" data-bind="text: num = isNaN(parseInt(compareProducts().countCaption)) ? 0 : parseInt(compareProducts().countCaption)"></span>
+    </a>
+                                            </li>
+                                            <script type="text/x-magento-init">
+                                                {"[data-role=compare-products-link]": {"Magento_Ui/js/core/app": {"components":{"compareProducts":{"component":"Magento_Catalog\/js\/view\/compare-products"}}}}}
+                                            </script>
+                                            <li>
+                                                <a href="/magento_63844/customer/account/create/">Create an Account</a>
+                                            </li>
+                                            <li class="authorization-link" data-label="or">
+                                                <a href="/magento_63844/customer/account/login/">
+        Sign In    </a>
+                                            </li>undefined</ul>undefined
+                                        <div class="switcher currency switcher-currency" id="mobile-switcher-currency">
+                                            <strong class="label switcher-label">
+    <span>Currency</span>
+</strong>
+                                            <div class="actions dropdown options switcher-options">
+                                                <div class="action toggle switcher-trigger" id="mobile-switcher-currency-trigger">
+                                                    <strong class="language-USD">
+            <span>USD - US Dollar</span>
+        </strong>
+                                                </div>
+                                                <ul class="dropdown switcher-dropdown" data-mage-init='{"dropdownDialog":{
+            "appendTo":"#mobile-switcher-currency > .options",
+            "triggerTarget":"#mobile-switcher-currency-trigger",
+            "closeOnMouseLeave": false,
+            "triggerClass":"active",
+            "parentClass":"active",
+            "buttons":null}}'>
+                                                    <li class="currency-GBP switcher-option">
+                                                        <a href="#" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/directory\/currency\/switch\/","data":{"currency":"GBP","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}'>GBP - British Pound Sterling</a>
+                                                    </li>
+                                                    <li class="currency-EUR switcher-option">
+                                                        <a href="#" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/directory\/currency\/switch\/","data":{"currency":"EUR","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}'>EUR - Euro</a>
+                                                    </li>
+                                                </ul>
+                                            </div>undefined</div>undefined</div>undefined</div>undefined
+                                <li class="link wishlist" data-bind="scope: 'wishlist'">undefined<a href="/magento_63844/wishlist/">My Wish List
+        undefined<span data-bind="text: parseInt(wishlist().counter) || 0" class="counter qty"></span>undefined</a>undefined</li>undefined
+                                <script type="text/x-magento-init">
+                                    { "*": { "Magento_Ui/js/core/app": { "components": { "wishlist": { "component": "Magento_Wishlist/js/view/wishlist" } } } } }
+                                </script>undefined
+                                <div data-block="minicart" class="minicart-wrapper">undefined<a class="action showcart" href="/magento_63844/checkout/cart/" data-bind="scope: 'minicart_content'">undefined<span class="text"></span>undefined<span class="counter qty empty"
+                  data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
+<span class="counter-number">
+    <!-- ko if: !getCartParam('summary_count') -->
+    <!-- ko text: 0 -->
+    <!-- /ko -->
+    <!-- /ko -->
+    <!-- ko if: getCartParam('summary_count') -->
+    <!-- ko text: getCartParam('summary_count') -->
+    <!-- /ko -->
+    <!-- /ko -->
+</span>
+<span class="counter-label">
+    <!-- ko if: getCartParam('summary_count') == 1 -->
+    <!-- ko i18n: 'item' -->
+    <!-- /ko -->
+    <!-- /ko -->
+    <!-- ko if: getCartParam('summary_count') > 1 -->
+    <!-- ko i18n: 'items' -->
+    <!-- /ko -->
+    <!-- /ko -->
+</span>undefined</span>undefined<span class="showcart-label">My Cart</span>undefined</a>undefined
+                                    <div class="block block-minicart empty" data-role="dropdownDialog" data-mage-init='{"dropdownDialog":{
+                "appendTo":"[data-block=minicart]",
+                "triggerTarget":".showcart",
+                "timeout": "2000",
+                "closeOnClickOutside": true,
+                "closeOnMouseLeave": false,
+                "closeOnEscape": true,
+                "triggerClass":"active",
+                "parentClass":"active",
+                "buttons":[]}}'>undefined
+                                        <div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
+                                            <!-- ko template: getTemplate() -->
+                                            <!-- /ko -->undefined</div>undefined</div>undefined
+                                    <script>
+                                        window.checkout = {
+                                            "shoppingCartUrl": "https:\/\/ld-magento.template-help.com\/magento_63844\/checkout\/cart\/",
+                                            "checkoutUrl": "https:\/\/ld-magento.template-help.com\/magento_63844\/checkout\/",
+                                            "updateItemQtyUrl": "https:\/\/ld-magento.template-help.com\/magento_63844\/checkout\/sidebar\/updateItemQty\/",
+                                            "removeItemUrl": "https:\/\/ld-magento.template-help.com\/magento_63844\/checkout\/sidebar\/removeItem\/",
+                                            "imageTemplate": "Magento_Catalog\/product\/image_with_borders",
+                                            "baseUrl": "https:\/\/ld-magento.template-help.com\/magento_63844\/",
+                                            "minicartMaxItemsVisible": 5,
+                                            "websiteId": "1",
+                                            "customerLoginUrl": "https:\/\/ld-magento.template-help.com\/magento_63844\/customer\/account\/login\/",
+                                            "isRedirectRequired": false,
+                                            "autocomplete": "off",
+                                            "captcha": {
+                                                "user_login": {
+                                                    "isCaseSensitive": false,
+                                                    "imageHeight": 50,
+                                                    "imageSrc": "",
+                                                    "refreshUrl": "https:\/\/ld-magento.template-help.com\/magento_63844\/captcha\/refresh\/",
+                                                    "isRequired": false
+                                                },
+                                                "guest_checkout": {
+                                                    "isCaseSensitive": false,
+                                                    "imageHeight": 50,
+                                                    "imageSrc": "",
+                                                    "refreshUrl": "https:\/\/ld-magento.template-help.com\/magento_63844\/captcha\/refresh\/",
+                                                    "isRequired": false
+                                                }
+                                            }
+                                        };
+                                    </script>undefined
+                                    <script type="text/x-magento-init">
+                                        { "[data-block='minicart']": { "Magento_Ui/js/core/app": {"components":{"minicart_content":{"children":{"subtotal.container":{"children":{"subtotal":{"children":{"subtotal.totals":{"config":{"display_cart_subtotal_incl_tax":0,"display_cart_subtotal_excl_tax":1,"template":"Magento_Tax\/checkout\/minicart\/subtotal\/totals"},"children":{"subtotal.totals.msrp":{"component":"Magento_Msrp\/js\/view\/checkout\/minicart\/subtotal\/totals","config":{"displayArea":"minicart-subtotal-hidden","template":"Magento_Msrp\/checkout\/minicart\/subtotal\/totals"}}},"component":"Magento_Tax\/js\/view\/checkout\/minicart\/subtotal\/totals"}},"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/subtotal"}}},"component":"uiComponent","config":{"displayArea":"subtotalContainer"}},"item.renderer":{"component":"uiComponent","config":{"displayArea":"defaultRenderer","template":"Magento_Checkout\/minicart\/item\/default"},"children":{"item.image":{"component":"Magento_Catalog\/js\/view\/image","config":{"template":"Magento_Catalog\/product\/image","displayArea":"itemImage"}},"checkout.cart.item.price.sidebar":{"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/item\/price","displayArea":"priceSidebar"}}}},"extra_info":{"component":"uiComponent","config":{"displayArea":"extraInfo"}},"promotion":{"component":"uiComponent","config":{"displayArea":"promotion"}}},"config":{"itemRenderer":{"default":"defaultRenderer","simple":"defaultRenderer","virtual":"defaultRenderer"},"template":"Magento_Checkout\/minicart\/content"},"component":"Magento_Checkout\/js\/view\/minicart"}},"types":[]} }, "*": { "Magento_Ui/js/block-loader": "en_US/images/loader-1.gif" } }
+
+                                    </script>undefined</div>undefined</div>undefined</div>undefined
+                        <div class="sm-header-panel-canvas"></div>undefined
+                        <div class="sm-header-nav-wrap">undefined
+                            <!-- RD Navbar Toggle -->undefined
+                            <button class="sm-header-nav-toggle">undefined<span></span>undefined</button>undefined
+                            <!-- END RD Navbar Toggle -->undefined
+                            <!-- Top Nav -->undefined
+                            <nav class="navigation  tm-top-navigation" role="navigation">undefined
+                                <ul data-mage-init='{"megamenu":{"menus": "li > ul:not(.mm-submenu), .megamenu-wrapper", "position":{"my":"left top","at":"left bottom"}, "differentPositionMenus":".megamenu-wrapper", "differentPosition":{"my":"left top","at":"left bottom","of":".navigation"}}}'>undefined
+                                    <li class="level0 nav-1 first level-top  parent">undefined
+                                        <a href="/magento_63844/water-heaters.html" class="level-top ">
+                                            <span>Faucets</span>undefined</a>undefined
+                                        <!-- For sidebar menu: add class "in-sidebar" to "tm-megamenu" div -->undefined
+                                        <div class="tm-megamenu megamenu-wrapper submenu ">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-sm-3 ">
+                                                        <div class="static-block">
+                                                            <div class="menu-banner">
+                                                                <a href="/magento_63844/water-heaters/irrigation.html">
+                                                                    <img src="en_US/images/media/sub-category-1.jpg" />
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="mm-submenu level1">
+                                                            <li class="item ui-menu-item">
+                                                                <a href="/magento_63844/water-heaters/irrigation.html">
+                        Kitchen Faucets        </a>
+                                                                <ul class="mm-submenu level2">
+                                                                    <li class="item ui-menu-item">
+                                                                        <a href="/magento_63844/water-heaters/irrigation/grohe.html">Grohe</a>
+                                                                        <ul class="mm-submenu level3 vm-static" data-mage-init='{"subMenuViewMode": {}}'></ul>
+                                                                    </li>
+                                                                    <li class="item ui-menu-item">
+                                                                        <a href="/magento_63844/water-heaters/irrigation/rohl.html">Rohl</a>
+                                                                        <ul class="mm-submenu level3 vm-static" data-mage-init='{"subMenuViewMode": {}}'></ul>
+                                                                    </li>
+                                                                    <li class="item ui-menu-item">
+                                                                        <a href="/magento_63844/water-heaters/irrigation/hansgrohe.html">Hansgrohe</a>
+                                                                        <ul class="mm-submenu level3 vm-static" data-mage-init='{"subMenuViewMode": {}}'></ul>
+                                                                    </li>
+                                                                    <li class="item ui-menu-item">
+                                                                        <a href="/magento_63844/water-heaters/irrigation/kwc.html">KWC</a>
+                                                                        <ul class="mm-submenu level3 vm-static" data-mage-init='{"subMenuViewMode": {}}'></ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-3 ">
+                                                        <div class="static-block">
+                                                            <div class="menu-banner">
+                                                                <a href="/magento_63844/water-heaters/toilets.html">
+                                                                    <img src="en_US/images/media/sub-category-2.jpg" />
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="mm-submenu level1">
+                                                            <li class="item ui-menu-item">
+                                                                <a href="/magento_63844/water-heaters/toilets.html">
+                        Bathroom Faucets        </a>
+                                                                <ul class="mm-submenu level2">
+                                                                    <li class="item ui-menu-item">
+                                                                        <a href="/magento_63844/water-heaters/toilets/moen.html">Moen</a>
+                                                                        <ul class="mm-submenu level3 vm-static" data-mage-init='{"subMenuViewMode": {}}'></ul>
+                                                                    </li>
+                                                                    <li class="item ui-menu-item">
+                                                                        <a href="/magento_63844/water-heaters/toilets/delta.html">Delta</a>
+                                                                        <ul class="mm-submenu level3 vm-static" data-mage-init='{"subMenuViewMode": {}}'></ul>
+                                                                    </li>
+                                                                    <li class="item ui-menu-item">
+                                                                        <a href="/magento_63844/water-heaters/toilets/blanco.html">Blanco</a>
+                                                                        <ul class="mm-submenu level3 vm-static" data-mage-init='{"subMenuViewMode": {}}'></ul>
+                                                                    </li>
+                                                                    <li class="item ui-menu-item">
+                                                                        <a href="/magento_63844/water-heaters/toilets/california-faucets.html">California Faucets</a>
+                                                                        <ul class="mm-submenu level3 vm-static" data-mage-init='{"subMenuViewMode": {}}'></ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-6 ">
+                                                        <div class="static-block">
+                                                            <div class="menu-banner">
+                                                                <div>
+                                                                    <a href="/magento_63844/commercial-faucets.html">
+                                                                        <img src="en_US/images/media/menu-banner-1.jpg" />
+                                                                    </a>
+                                                                </div>
+                                                                <div>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="/magento_63844/commercial-faucets.html">Commercial Faucets</a>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <a href="/magento_63844/water-heaters/commercial-faucets/professional-kitchen-faucets.html">Professional Kitchen Faucets</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="/magento_63844/water-heaters/commercial-faucets/mop-sink-faucets.html">Mop Sink Faucets</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="/magento_63844/water-heaters/commercial-faucets/showers-components.html">Showers & Components</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="/magento_63844/water-heaters/commercial-faucets/sensor-operated-faucets.html">Sensor Operated Faucets</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="/magento_63844/water-heaters/commercial-faucets/turret-faucets.html">Turret Faucets </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="/magento_63844/water-heaters/commercial-faucets/hydrants-hose-bibbs.html">Hydrants & Hose Bibbs</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>undefined</div>undefined</li>undefined
+                                    <li class="level0 nav-2 level-top  parent">undefined
+                                        <a href="/magento_63844/pipes-fittings-valves.html" class="level-top ">
+                                            <span>Fittings &amp; Valves</span>undefined</a>undefined
+                                        <ul class="level0 submenu rd-navbar-dropdown">
+                                            <li class="level1 nav-2-1 first">
+                                                <a href="/magento_63844/pipes-fittings-valves/faucets.html">
+                                                    <span>Faucets</span>
+                                                </a>
+                                            </li>
+                                            <li class="level1 nav-2-2 last">
+                                                <a href="/magento_63844/pipes-fittings-valves/utility-sinks.html">
+                                                    <span>Utility Sinks</span>
+                                                </a>
+                                            </li>undefined</ul>undefined</li>undefined
+                                    <li class="level0 nav-3 level-top ">undefined
+                                        <a href="/magento_63844/drain-openers.html" class="level-top ">
+                                            <span>Drain Openers</span>undefined</a>undefined</li>undefined
+                                    <li class="level0 nav-4 last level-top ">undefined
+                                        <a href="/magento_63844/plumbing-tools-accessories.html" class="level-top ">
+                                            <span>Plumbing Tools &amp; Accessories</span>undefined</a>undefined</li>undefined</ul>undefined</nav>undefined</div>undefined</div>undefined</div>undefined</div>undefined</header>undefined
+        <div class="slider-pro-wrapper">undefined
+            <div class="slider-pro-container" style="padding-bottom: 39.0625%; height: autopx;">undefined
+                <div class="loading-mask for-slider">undefined
+                    <div class="loader">undefined<img src="en_US/TemplateMonster_FilmSlider/images/loader-2.gif" alt="Loading...">undefined</div>undefined</div>undefined
+                <div id="example1" class="slider-pro abs" data-mage-init='{"FilmSlider": {"slider_id":"1","width":"100%","height":"750","aspectRatio":"2.56","imageScaleMode":"cover","allowScaleUp":"true","autoHeight":"false","centerImage":"true","orientation":"horizontal","forceSize":"none","slideAnimationDuration":"700","heightAnimationDuration":"700","visibleSize":"auto","startSlide":"0","shuffle":"false","loop":"true","fade":"false","fadeOutPreviousSlide":"true","fadeDuration":"500","autoplay":"true","autoplayDelay":"7000","autoplayDirection":"normal","autoplayOnHover":"pause","arrows":"false","fadeArrows":"true","buttons":"true","keyboard":"true","fullScreen":"false","fadeFullScreen":"true","responsive":"true","touchSwipe":"true","touchSwipeThreshold":"50","smallSize":"480","mediumSize":"768","largeSize":"1024","fadeCaption":"true","captionFadeDuration":"5000","waitForLayers":"false","autoScaleLayers":"true","autoScaleReference":"1920","limit":"20","page":"1","title":""}}'>undefined
+                    <div class="sp-slides">undefined
+                        <div class="sp-slide">undefined<img class="sp-image" src="en_US/TemplateMonster_FilmSlider/images/blank.gif" data-src="magento_63844/pub/media/wysiwyg/slide-1.jpg" />undefined
+                            <div class="sp-layer " data-position="topLeft" data-horizontal="335" data-vertical="235" data-show-transition="down" data-hide-transition="down" data-show-delay="500" data-show-duration="500" data-hide-duration="200" data-show-offset="500">undefined
+                                <div style="width: 640px;                                                                                                            color: #ffffff;                                                                        font-size: 87px;                                    line-height: 87px;                                    font-style: normal;                                    font-weight: 700;                                                                            ">
+                                    Top Sellers </div>undefined</div>undefined
+                            <div class="sp-layer " data-position="topLeft" data-horizontal="335" data-vertical="338" data-show-transition="right" data-hide-transition="down" data-show-delay="700" data-show-duration="700" data-hide-duration="200" data-show-offset="700">undefined
+                                <div style="width: 640px;                                                                                                            color: #ffffff;                                                                        font-size: 66px;                                    line-height: 66px;                                    font-style: normal;                                    font-weight: 300;                                                                            ">
+                                    PLUMBING FIXTURES </div>undefined</div>undefined
+                            <div class="sp-layer button-slider" data-position="topLeft" data-horizontal="335" data-vertical="445" data-show-transition="up" data-hide-transition="down" data-show-delay="800" data-show-duration="800" data-hide-duration="200" data-show-offset="800">undefined
+                                <div style="width: 300px;                                                                                                                                                                                    font-size: 16px;                                                                        font-style: normal;                                    font-weight: 700;                                                                            ">undefined<a href="drain-openers.html" class="btn-slider">shop now</a>undefined</div>undefined</div>undefined</div>undefined
+                        <div class="sp-slide">undefined<img class="sp-image" src="en_US/TemplateMonster_FilmSlider/images/blank.gif" data-src="magento_63844/pub/media/wysiwyg/slide-2.jpg" />undefined
+                            <div class="sp-layer " data-position="topLeft" data-horizontal="1106" data-vertical="236" data-show-transition="down" data-hide-transition="down" data-show-delay="500" data-show-duration="500" data-hide-duration="200" data-show-offset="500">undefined
+                                <div style="width: 660px;                                                                                                            color: #ffffff;                                                                        font-size: 87px;                                    line-height: 87px;                                    font-style: normal;                                    font-weight: 700;                                                                            ">
+                                    new arrivals </div>undefined</div>undefined
+                            <div class="sp-layer " data-position="topLeft" data-horizontal="1106" data-vertical="338" data-show-transition="left" data-hide-transition="down" data-show-delay="700" data-show-duration="700" data-hide-duration="200" data-show-offset="700">undefined
+                                <div style="width: 660px;                                                                                                            color: #ffffff;                                                                        font-size: 66px;                                    line-height: 66px;                                    font-style: normal;                                    font-weight: 300;                                                                            ">
+                                    Bathroom Sinks </div>undefined</div>undefined
+                            <div class="sp-layer button-slider padding-1" data-position="topLeft" data-horizontal="1106" data-vertical="446" data-show-transition="up" data-hide-transition="down" data-show-delay="800" data-show-duration="800" data-hide-duration="200" data-show-offset="800">undefined
+                                <div style="width: 300px;                                                                                                                                                                                    font-size: 16px;                                                                        font-style: normal;                                    font-weight: 500;                                                                            ">undefined<a href="plumbing-tools-accessories.html" class="btn-slider">shop now</a>undefined</div>undefined</div>undefined</div>undefined
+                        <div class="sp-slide">undefined<img class="sp-image" src="en_US/TemplateMonster_FilmSlider/images/blank.gif" data-src="magento_63844/pub/media/wysiwyg/slide-3.jpg" />undefined
+                            <div class="sp-layer " data-position="topLeft" data-horizontal="154" data-vertical="235" data-show-transition="down" data-hide-transition="down" data-show-delay="500" data-show-duration="500" data-hide-duration="200" data-show-offset="500">undefined
+                                <div style="width: 544px;                                                                                                            color: #ffffff;                                                                        font-size: 87px;                                    line-height: 87px;                                    font-style: normal;                                    font-weight: 700;                                                                            ">
+                                    clearance </div>undefined</div>undefined
+                            <div class="sp-layer " data-position="topLeft" data-horizontal="154" data-vertical="340" data-show-transition="right" data-hide-transition="down" data-show-delay="700" data-show-duration="700" data-hide-duration="200" data-show-offset="700">undefined
+                                <div style="width: 600px;                                                                                                            color: #ffffff;                                                                        font-size: 66px;                                    line-height: 66px;                                    font-style: normal;                                    font-weight: 300;                                                                            ">
+                                    TUBS & SHOWERS </div>undefined</div>undefined
+                            <div class="sp-layer button-slider" data-position="topLeft" data-horizontal="154" data-vertical="445" data-show-transition="up" data-hide-transition="down" data-show-delay="800" data-show-duration="800" data-hide-duration="200" data-show-offset="800">undefined
+                                <div style="width: 300px;                                                                                                                                                                                    font-size: 16px;                                                                        font-style: normal;                                    font-weight: 500;                                                                            ">undefined<a href="pipes-fittings-valves.html" class="btn-slider">shop now</a>undefined</div>undefined</div>undefined</div>undefined</div>undefined</div>undefined</div>undefined</div>undefined
+        <div class="widget block block-static-block">undefined
+            <div class="banners-1 banners row">undefined
+                <div class="col-sm-6">undefined<a class="banner-1" href="/magento_63844/pipes-fittings-valves.html">undefined<img src="en_US/images/media/banner-1.jpg"/>undefined<div class="list-content">undefined<div>undefined<div class="title-1">30undefined<span>%
+<span>off</span>undefined</span>undefined</div>undefined<div class="title-2">Bathtubsundefined<br/>undefined<span>& Hot Tubs</span>undefined</div>undefined</div>undefined</div>undefined</a>undefined</div>undefined
+                <div class="col-sm-6">undefined<a class="banner-2" href="/magento_63844/drain-openers.html">undefined<img src="en_US/images/media/banner-2.jpg"/>undefined<div class="list-content">undefined<div class="title-1">50undefined<span>% undefined<span>off</span>undefined</span>undefined</div>undefined<div class="title-2">A diverse variety of high-quality undefined<span>heating supplies  </span>undefined</div>undefined</div>undefined</a>undefined</div>undefined</div>undefined</div>undefined
+        <main id="maincontent" class="page-main">undefined
+            <a id="contentarea" tabindex="-1"></a>undefined
+            <div class="page-messages messages">undefined
+                <div class="container">undefined
+                    <div data-placeholder="messages"></div>undefined
+                    <div data-bind="scope: 'messages'">undefined
+                        <div data-bind="foreach: { data: cookieMessages, as: 'message' }" class="messages">undefined
+                            <div data-bind="attr: {
+            class: 'message-' + message.type + ' ' + message.type + ' message',
+            'data-ui-id': 'message-' + message.type
+        }">undefined
+                                <div data-bind="html: message.text"></div>undefined</div>undefined</div>undefined
+                        <div data-bind="foreach: { data: messages().messages, as: 'message' }" class="messages">undefined
+                            <div data-bind="attr: {
+            class: 'message-' + message.type + ' ' + message.type + ' message',
+            'data-ui-id': 'message-' + message.type
+        }">undefined
+                                <div data-bind="html: message.text"></div>undefined</div>undefined</div>undefined</div>undefined
+                    <script type="text/x-magento-init">
+                        { "*": { "Magento_Ui/js/core/app": { "components": { "messages": { "component": "Magento_Theme/js/view/messages" } } } } }
+                    </script>undefined</div>undefined</div>undefined
+            <div class="columns container">undefined
+                <div class="column main">undefined
+                    <input name="form_key" type="hidden" value="xP7Awd01BR84ycnB" />undefined
+                    <div id="authenticationPopup" data-bind="scope:'authenticationPopup'" style="display: none;">undefined
+                        <script>
+                            window.authenticationPopup = {
+                                "customerRegisterUrl": "https:\/\/ld-magento.template-help.com\/magento_63844\/customer\/account\/create\/",
+                                "customerForgotPasswordUrl": "https:\/\/ld-magento.template-help.com\/magento_63844\/customer\/account\/forgotpassword\/",
+                                "baseUrl": "https:\/\/ld-magento.template-help.com\/magento_63844\/"
+                            };
+                        </script>undefined
+                        <!-- ko template: getTemplate() -->undefined
+                        <!-- /ko -->undefined
+                        <script type="text/x-magento-init">
+                            { "#authenticationPopup": { "Magento_Ui/js/core/app": {"components":{"authenticationPopup":{"component":"Magento_Customer\/js\/view\/authentication-popup","children":{"messages":{"component":"Magento_Ui\/js\/view\/messages","displayArea":"messages"},"captcha":{"component":"Magento_Captcha\/js\/view\/checkout\/loginCaptcha","displayArea":"additional-login-form-fields","formId":"user_login","configSource":"checkout"}}}}} }, "*": { "Magento_Ui/js/block-loader": "/en_US/images/loader-1.gif" } }
+                        </script>undefined</div>undefined
+                    <script type="text/x-magento-init">
+                        {"*":{"Magento_Customer\/js\/section-config":{"sections":{"stores\/store\/switch":"*","directory\/currency\/switch":"*","*":["messages"],"customer\/account\/logout":"*","customer\/account\/loginpost":"*","customer\/account\/createpost":"*","customer\/ajax\/login":["checkout-data","cart"],"catalog\/product_compare\/add":["compare-products"],"catalog\/product_compare\/remove":["compare-products"],"catalog\/product_compare\/clear":["compare-products"],"sales\/guest\/reorder":["cart"],"sales\/order\/reorder":["cart"],"checkout\/cart\/add":["cart"],"checkout\/cart\/delete":["cart"],"checkout\/cart\/updatepost":["cart"],"checkout\/cart\/updateitemoptions":["cart"],"checkout\/cart\/couponpost":["cart"],"checkout\/cart\/estimatepost":["cart"],"checkout\/cart\/estimateupdatepost":["cart"],"checkout\/onepage\/saveorder":["cart","checkout-data","last-ordered-items"],"checkout\/sidebar\/removeitem":["cart"],"checkout\/sidebar\/updateitemqty":["cart"],"rest\/*\/v1\/carts\/*\/payment-information":["cart","checkout-data","last-ordered-items"],"rest\/*\/v1\/guest-carts\/*\/payment-information":["cart","checkout-data"],"rest\/*\/v1\/guest-carts\/*\/selected-payment-method":["cart","checkout-data"],"rest\/*\/v1\/carts\/*\/selected-payment-method":["cart","checkout-data"],"multishipping\/checkout\/overviewpost":["cart"],"authorizenet\/directpost_payment\/place":["cart","checkout-data"],"review\/product\/post":["review"],"paypal\/express\/placeorder":["cart","checkout-data"],"paypal\/payflowexpress\/placeorder":["cart","checkout-data"],"braintree\/paypal\/placeorder":["cart","checkout-data"],"wishlist\/index\/add":["wishlist"],"wishlist\/index\/remove":["wishlist"],"wishlist\/index\/updateitemoptions":["wishlist"],"wishlist\/index\/update":["wishlist"],"wishlist\/index\/cart":["wishlist","cart"],"wishlist\/index\/fromcart":["wishlist","cart"],"wishlist\/index\/allcart":["wishlist","cart"],"wishlist\/shared\/allcart":["wishlist","cart"],"wishlist\/shared\/cart":["cart"]},"clientSideSections":["checkout-data"],"baseUrls":["https:\/\/ld-magento.template-help.com\/magento_63844\/"]}}}</script>undefined
+                    <script type="text/x-magento-init">
+                        {"*":{"Magento_Customer\/js\/customer-data":{"sectionLoadUrl":"https:\/\/ld-magento.template-help.com\/magento_63844\/customer\/section\/load\/","cookieLifeTime":"3600","updateSessionUrl":"https:\/\/ld-magento.template-help.com\/magento_63844\/customer\/account\/updateSession\/"}}}</script>undefined
+                    <script type="text/x-magento-init">
+                        { "body": { "pageCache": {"url":"https:\/\/ld-magento.template-help.com\/magento_63844\/page_cache\/block\/render\/","handles":["default","cms_index_index","cms_page_view","cms_index_index_id_home"],"originalRequest":{"route":"cms","controller":"index","action":"index","uri":"\/magento_63844\/"},"versionCookieName":"private_content_version"} } }
+                    </script>undefined
+                    <div class="block widget brands ">undefined
+                        <div class="block-content">undefined
+                            <ul class="brandlist" data-mage-init='{"brandCarousel": {"items": "6",
+                "itemsDesktop": [1199, 4],
+                "itemsDesktopSmall": [979, 3],
+                "itemsTablet" : [768, 2],
+                "itemsMobile" : [479, 1]
+                }}'>undefined
+                                <li>undefined
+                                    <div class="inner">
+                                        <a class="brand-logo" href="/magento_63844/grohe/">
+                                            <img src="magento_63844/pub/media/logo/logo/resized/224/man-1.png" alt="Grohe">
+                                        </a>
+                                    </div>undefined</li>undefined
+                                <li>
+                                    <div class="inner">
+                                        <a class="brand-logo" href="/magento_63844/elkay/">
+                                            <img src="magento_63844/pub/media/logo/logo/resized/224/man-2.png" alt="Elkay">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <a class="brand-logo" href="/magento_63844/kohler/">
+                                            <img src="magento_63844/pub/media/logo/logo/resized/224/man-3.png" alt="Kohler">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <a class="brand-logo" href="/magento_63844/moen/">
+                                            <img src="magento_63844/pub/media/logo/logo/resized/224/man-4.png" alt="Moen">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <a class="brand-logo" href="/magento_63844/blanco/">
+                                            <img src="magento_63844/pub/media/logo/logo/resized/224/man-5.png" alt="Blanco">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <a class="brand-logo" href="/magento_63844/franke/">
+                                            <img src="magento_63844/pub/media/logo/logo/resized/224/man-6.png" alt="Franke">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <a class="brand-logo" href="/magento_63844/grohe2/">
+                                            <img src="magento_63844/pub/media/logo/logo/resized/224/man-1.png" alt="Grohe2">
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block widget featured grid ">
+                        <div class="block-title" data-role="collapsible">
+                            <strong aria-level="2">New Products</strong>
+                        </div>
+                        <div class="block-content custom-columns " data-role="content">
+                            <div>
+                                <div class="products-grid widget-new-grid grid ">
+                                    <div class="product-items">
+                                        <div class="product-item" style="width: 25%; max-width: 25%;">
+                                            <div class="product-item-info">
+                                                <a href="/magento_63844/marey-eco-110-electric-tankless-water-heater.html" class="product-item-photo">
+                                                    <span class="product-label">new!</span>
+                                                    <span class="product-image-container" style="width:388px;">
+                                            <span class="product-image-wrapper"
+          style="padding-bottom: 100%;">
+                                                <img class="product-image-photo"
+                          src="magento_63844/pub/media/catalog/product/cache/small_image/388x388/beff4985b56e3afdbeabfc89641a4582/m/a/marey_eco_110_electric_tankless_water_heater_4.png"
+             width="388"
+             height="388"
+             alt="Marey ECO 110 Electric Tankless Water Heater"/>
+                                            </span>
+                                                    </span>
+                                                </a>
+                                                <div class="product-item-details">
+                                                    <strong class="product-item-name">
+                                            <a title="Marey ECO 110 Electric Tankless Water Heater"
+                                                           href="/magento_63844/marey-eco-110-electric-tankless-water-heater.html"
+                                                           class="product-item-link">
+                                                            Marey ECO 110 Electric Tankles...                                                        </a>
+                                        </strong>
+                                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="1">
+                                                        <span class="price-container price-final_price tax weee">
+                                                <span  id="old-price-1-widget-new-grid"                data-price-amount="56"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+                                                    <span class="price">$56.00</span>
+                                                        </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-item-actions">
+                                                        <div class="actions-primary">
+                                                            <button class="action tocart primary" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/checkout\/cart\/add\/uenc\/aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv\/product\/1\/","data":{"product":"1","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' type="button" title="Add to Cart">
+                                                                <span>Add to Cart</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="actions-secondary" data-role="add-to-links">
+                                                            <a href="#" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/wishlist\/index\/add\/","data":{"product":"1","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' class="action towishlist" data-action="add-to-wishlist" title="Add to Wish List">
+                                                                <span>Add to Wish List</span>
+                                                            </a>
+                                                            <a href="#" class="action tocompare" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/catalog\/product_compare\/add\/","data":{"product":"1","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' title="Add to Compare">
+                                                                <span>Add to Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item" style="width: 25%; max-width: 25%;">
+                                            <div class="product-item-info">
+                                                <a href="/magento_63844/insinkerator-evolution-compact-3-4-hp-household-garbage.html" class="product-item-photo">
+                                                    <span class="product-label">new!</span>
+                                                    <span class="product-image-container" style="width:388px;">
+                                            <span class="product-image-wrapper"
+          style="padding-bottom: 100%;">
+                                                <img class="product-image-photo"
+                          src="magento_63844/pub/media/catalog/product/cache/small_image/388x388/beff4985b56e3afdbeabfc89641a4582/i/n/insinkerator_evolution_compact_3-4_hp_household_garbage_1_.png"
+             width="388"
+             height="388"
+             alt="InSinkErator Evolution Compact 3-4 HP Household Garbage "/>
+                                            </span>
+                                                    </span>
+                                                </a>
+                                                <div class="product-item-details">
+                                                    <strong class="product-item-name">
+                                            <a title="InSinkErator Evolution Compact 3-4 HP Household Garbage "
+                                                           href="/magento_63844/insinkerator-evolution-compact-3-4-hp-household-garbage.html"
+                                                           class="product-item-link">
+                                                            InSinkErator Evolution Compact...                                                        </a>
+                                        </strong>
+                                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="2">
+                                                        <span class="price-container price-final_price tax weee">
+                                                <span  id="old-price-2-widget-new-grid"                data-price-amount="120"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+                                                    <span class="price">$120.00</span>
+                                                        </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-item-actions">
+                                                        <div class="actions-primary">
+                                                            <button class="action tocart primary" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/checkout\/cart\/add\/uenc\/aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv\/product\/2\/","data":{"product":"2","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' type="button" title="Add to Cart">
+                                                                <span>Add to Cart</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="actions-secondary" data-role="add-to-links">
+                                                            <a href="#" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/wishlist\/index\/add\/","data":{"product":"2","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' class="action towishlist" data-action="add-to-wishlist" title="Add to Wish List">
+                                                                <span>Add to Wish List</span>
+                                                            </a>
+                                                            <a href="#" class="action tocompare" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/catalog\/product_compare\/add\/","data":{"product":"2","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' title="Add to Compare">
+                                                                <span>Add to Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item" style="width: 25%; max-width: 25%;">
+                                            <div class="product-item-info">
+                                                <a href="/magento_63844/duromax-xp652wp-2-inch-intake-portable-water-pump.html" class="product-item-photo">
+                                                    <span class="product-label">new!</span>
+                                                    <span class="product-image-container" style="width:388px;">
+                                            <span class="product-image-wrapper"
+          style="padding-bottom: 100%;">
+                                                <img class="product-image-photo"
+                          src="magento_63844/pub/media/catalog/product/cache/small_image/388x388/beff4985b56e3afdbeabfc89641a4582/d/u/duromax_xp652wp_2-inch_intake_portable_water_pump_3_.png"
+             width="388"
+             height="388"
+             alt="DuroMax XP652WP 2-Inch Intake Portable Water Pump"/>
+                                            </span>
+                                                    </span>
+                                                </a>
+                                                <div class="product-item-details">
+                                                    <strong class="product-item-name">
+                                            <a title="DuroMax XP652WP 2-Inch Intake Portable Water Pump"
+                                                           href="/magento_63844/duromax-xp652wp-2-inch-intake-portable-water-pump.html"
+                                                           class="product-item-link">
+                                                            DuroMax XP652WP 2-Inch Intake ...                                                        </a>
+                                        </strong>
+                                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="3">
+                                                        <span class="price-container price-final_price tax weee">
+                                                <span  id="old-price-3-widget-new-grid"                data-price-amount="97"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+                                                    <span class="price">$97.00</span>
+                                                        </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-item-actions">
+                                                        <div class="actions-primary">
+                                                            <button class="action tocart primary" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/checkout\/cart\/add\/uenc\/aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv\/product\/3\/","data":{"product":"3","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' type="button" title="Add to Cart">
+                                                                <span>Add to Cart</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="actions-secondary" data-role="add-to-links">
+                                                            <a href="#" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/wishlist\/index\/add\/","data":{"product":"3","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' class="action towishlist" data-action="add-to-wishlist" title="Add to Wish List">
+                                                                <span>Add to Wish List</span>
+                                                            </a>
+                                                            <a href="#" class="action tocompare" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/catalog\/product_compare\/add\/","data":{"product":"3","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' title="Add to Compare">
+                                                                <span>Add to Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item" style="width: 25%; max-width: 25%;">
+                                            <div class="product-item-info">
+                                                <a href="/magento_63844/brita-on-tap-faucet-water-filter-system-replacement-filters.html" class="product-item-photo">
+                                                    <span class="product-label">new!</span>
+                                                    <span class="product-image-container" style="width:388px;">
+                                            <span class="product-image-wrapper"
+          style="padding-bottom: 100%;">
+                                                <img class="product-image-photo"
+                          src="magento_63844/pub/media/catalog/product/cache/small_image/388x388/beff4985b56e3afdbeabfc89641a4582/b/r/brita_on_tap_faucet_water_filter_system_1.png"
+             width="388"
+             height="388"
+             alt="Brita On Tap Faucet Water Filter System Replacement Filters"/>
+                                            </span>
+                                                    </span>
+                                                </a>
+                                                <div class="product-item-details">
+                                                    <strong class="product-item-name">
+                                            <a title="Brita On Tap Faucet Water Filter System Replacement Filters"
+                                                           href="/magento_63844/brita-on-tap-faucet-water-filter-system-replacement-filters.html"
+                                                           class="product-item-link">
+                                                            Brita On Tap Faucet Water Filt...                                                        </a>
+                                        </strong>
+                                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="4">
+                                                        <span class="price-container price-final_price tax weee">
+                                                <span  id="old-price-4-widget-new-grid"                data-price-amount="166"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+                                                    <span class="price">$166.00</span>
+                                                        </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-item-actions">
+                                                        <div class="actions-primary">
+                                                            <button class="action tocart primary" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/checkout\/cart\/add\/uenc\/aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv\/product\/4\/","data":{"product":"4","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' type="button" title="Add to Cart">
+                                                                <span>Add to Cart</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="actions-secondary" data-role="add-to-links">
+                                                            <a href="#" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/wishlist\/index\/add\/","data":{"product":"4","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' class="action towishlist" data-action="add-to-wishlist" title="Add to Wish List">
+                                                                <span>Add to Wish List</span>
+                                                            </a>
+                                                            <a href="#" class="action tocompare" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/catalog\/product_compare\/add\/","data":{"product":"4","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' title="Add to Compare">
+                                                                <span>Add to Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget block block-static-block">
+                        <div class="banners-2 banners row">
+                            <div class="col-sm-4">
+                                <a class="banner-3" href="/magento_63844/water-heaters.html">
+                                    <img src="en_US/images/media/banner-3.jpg" />
+                                    <div class="list-content">
+                                        <div class="title-1">Sinks & faucets</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a class="banner-4" href="/magento_63844/pipes-fittings-valves.html">
+                                    <img src="en_US/images/media/banner-4.jpg" />
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a class="banner-5" href="/magento_63844/drain-openers.html">
+                                    <img src="en_US/images/media/banner-5.jpg" />
+                                    <div class="list-content">
+                                        <div>
+                                            <div class="title-1">Toilets, Toilet Seats,
+
+                                                <span>Bidets, & Toilet Parts</span>
+                                            </div>
+                                            <span class="btn-banner">shop now</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block widget featured grid sale-products">
+                        <div class="block-title" data-role="collapsible">
+                            <strong aria-level="2">On Sale</strong>
+                        </div>
+                        <div class="block-content custom-columns " data-role="content">
+                            <div>
+                                <div class="products-grid widget-new-grid grid ">
+                                    <div class="product-items">
+                                        <div class="product-item" style="width: 25%; max-width: 25%;">
+                                            <div class="product-item-info">
+                                                <a href="/magento_63844/brita-on-tap-faucet-water-filter-system.html" class="product-item-photo">
+                                                    <span class="product-label">SALE!</span>
+                                                    <span class="product-image-container" style="width:388px;">
+                                            <span class="product-image-wrapper"
+          style="padding-bottom: 100%;">
+                                                <img class="product-image-photo"
+                          src="magento_63844/pub/media/catalog/product/cache/small_image/388x388/beff4985b56e3afdbeabfc89641a4582/b/r/brita_on_tap_faucet_water_filter_system_replacement_filters_1.png"
+             width="388"
+             height="388"
+             alt="Brita On Tap Faucet Water Filter System "/>
+                                            </span>
+                                                    </span>
+                                                </a>
+                                                <div class="product-item-details">
+                                                    <strong class="product-item-name">
+                                            <a title="Brita On Tap Faucet Water Filter System "
+                                                           href="/magento_63844/brita-on-tap-faucet-water-filter-system.html"
+                                                           class="product-item-link">
+                                                            Brita On Tap Faucet Water Filt...                                                        </a>
+                                        </strong>
+                                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="5">
+                                                        <span class="special-price">
+                                                <span class="price-container price-final_price tax weee"
+        >
+                                                    <span class="price-label">Special Price</span>
+                                                        <span id="old-price-5-widget-new-grid" data-price-amount="250" data-price-type="finalPrice" class="price-wrapper ">
+                                                        <span class="price">$250.00</span>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+                                                        <span class="old-price">
+                                                <span class="price-container price-final_price tax weee"
+        >
+                                                    <span class="price-label">Regular Price</span>
+                                                        <span id="old-price-5-widget-new-grid" data-price-amount="265" data-price-type="oldPrice" class="price-wrapper ">
+                                                        <span class="price">$265.00</span>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-item-actions">
+                                                        <div class="actions-primary">
+                                                            <button class="action tocart primary" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/checkout\/cart\/add\/uenc\/aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv\/product\/5\/","data":{"product":"5","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' type="button" title="Add to Cart">
+                                                                <span>Add to Cart</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="actions-secondary" data-role="add-to-links">
+                                                            <a href="#" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/wishlist\/index\/add\/","data":{"product":"5","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' class="action towishlist" data-action="add-to-wishlist" title="Add to Wish List">
+                                                                <span>Add to Wish List</span>
+                                                            </a>
+                                                            <a href="#" class="action tocompare" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/catalog\/product_compare\/add\/","data":{"product":"5","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' title="Add to Compare">
+                                                                <span>Add to Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item" style="width: 25%; max-width: 25%;">
+                                            <div class="product-item-info">
+                                                <a href="/magento_63844/bathroom-tempered-glass-vessel-sink-single-lever-faucet-combo.html" class="product-item-photo">
+                                                    <span class="product-label">SALE!</span>
+                                                    <span class="product-image-container" style="width:388px;">
+                                            <span class="product-image-wrapper"
+          style="padding-bottom: 100%;">
+                                                <img class="product-image-photo"
+                          src="magento_63844/pub/media/catalog/product/cache/small_image/388x388/beff4985b56e3afdbeabfc89641a4582/b/a/bathroom_tempered_glass_vessel_sink_single_lever_faucet_combo_2_.png"
+             width="388"
+             height="388"
+             alt="Bathroom Tempered Glass Vessel Sink  Single Lever Faucet Combo "/>
+                                            </span>
+                                                    </span>
+                                                </a>
+                                                <div class="product-item-details">
+                                                    <strong class="product-item-name">
+                                            <a title="Bathroom Tempered Glass Vessel Sink  Single Lever Faucet Combo "
+                                                           href="/magento_63844/bathroom-tempered-glass-vessel-sink-single-lever-faucet-combo.html"
+                                                           class="product-item-link">
+                                                            Bathroom Tempered Glass Vessel...                                                        </a>
+                                        </strong>
+                                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="6">
+                                                        <span class="special-price">
+                                                <span class="price-container price-final_price tax weee"
+        >
+                                                    <span class="price-label">Special Price</span>
+                                                        <span id="old-price-6-widget-new-grid" data-price-amount="40" data-price-type="finalPrice" class="price-wrapper ">
+                                                        <span class="price">$40.00</span>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+                                                        <span class="old-price">
+                                                <span class="price-container price-final_price tax weee"
+        >
+                                                    <span class="price-label">Regular Price</span>
+                                                        <span id="old-price-6-widget-new-grid" data-price-amount="45" data-price-type="oldPrice" class="price-wrapper ">
+                                                        <span class="price">$45.00</span>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-item-actions">
+                                                        <div class="actions-primary">
+                                                            <button class="action tocart primary" data-mage-init='{"redirectUrl":{"url":"/magento_63844/bathroom-tempered-glass-vessel-sink-single-lever-faucet-combo.html?options=cart"}}' type="button" title="Add to Cart">
+                                                                <span>Add to Cart</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="actions-secondary" data-role="add-to-links">
+                                                            <a href="#" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/wishlist\/index\/add\/","data":{"product":"6","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' class="action towishlist" data-action="add-to-wishlist" title="Add to Wish List">
+                                                                <span>Add to Wish List</span>
+                                                            </a>
+                                                            <a href="#" class="action tocompare" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/catalog\/product_compare\/add\/","data":{"product":"6","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' title="Add to Compare">
+                                                                <span>Add to Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item" style="width: 25%; max-width: 25%;">
+                                            <div class="product-item-info">
+                                                <a href="/magento_63844/kraus-c-gv-393-19mm-10orb-nix-glass-vessel-sink-and-waterfall.html" class="product-item-photo">
+                                                    <span class="product-label">SALE!</span>
+                                                    <span class="product-image-container" style="width:388px;">
+                                            <span class="product-image-wrapper"
+          style="padding-bottom: 100%;">
+                                                <img class="product-image-photo"
+                          src="magento_63844/pub/media/catalog/product/cache/small_image/388x388/beff4985b56e3afdbeabfc89641a4582/k/r/kraus_c-gv-393-19mm-10orb_nix_glass_vessel_sink_and_waterfall_faucet_1.png"
+             width="388"
+             height="388"
+             alt="Kraus C-GV-393-19mm-10ORB Nix Glass Vessel Sink and Waterfall "/>
+                                            </span>
+                                                    </span>
+                                                </a>
+                                                <div class="product-item-details">
+                                                    <strong class="product-item-name">
+                                            <a title="Kraus C-GV-393-19mm-10ORB Nix Glass Vessel Sink and Waterfall "
+                                                           href="/magento_63844/kraus-c-gv-393-19mm-10orb-nix-glass-vessel-sink-and-waterfall.html"
+                                                           class="product-item-link">
+                                                            Kraus C-GV-393-19mm-10ORB Nix ...                                                        </a>
+                                        </strong>
+                                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="7">
+                                                        <span class="special-price">
+                                                <span class="price-container price-final_price tax weee"
+        >
+                                                    <span class="price-label">Special Price</span>
+                                                        <span id="old-price-7-widget-new-grid" data-price-amount="60" data-price-type="finalPrice" class="price-wrapper ">
+                                                        <span class="price">$60.00</span>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+                                                        <span class="old-price">
+                                                <span class="price-container price-final_price tax weee"
+        >
+                                                    <span class="price-label">Regular Price</span>
+                                                        <span id="old-price-7-widget-new-grid" data-price-amount="66" data-price-type="oldPrice" class="price-wrapper ">
+                                                        <span class="price">$66.00</span>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-item-actions">
+                                                        <div class="actions-primary">
+                                                            <button class="action tocart primary" data-mage-init='{"redirectUrl":{"url":"/magento_63844/kraus-c-gv-393-19mm-10orb-nix-glass-vessel-sink-and-waterfall.html?options=cart"}}' type="button" title="Add to Cart">
+                                                                <span>Add to Cart</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="actions-secondary" data-role="add-to-links">
+                                                            <a href="#" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/wishlist\/index\/add\/","data":{"product":"7","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' class="action towishlist" data-action="add-to-wishlist" title="Add to Wish List">
+                                                                <span>Add to Wish List</span>
+                                                            </a>
+                                                            <a href="#" class="action tocompare" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/catalog\/product_compare\/add\/","data":{"product":"7","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' title="Add to Compare">
+                                                                <span>Add to Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item" style="width: 25%; max-width: 25%;">
+                                            <div class="product-item-info">
+                                                <a href="/magento_63844/kraus-c-gv-399-19mm-10sn-ladon-satin-nickel.html" class="product-item-photo">
+                                                    <span class="product-label">SALE!</span>
+                                                    <span class="product-image-container" style="width:388px;">
+                                            <span class="product-image-wrapper"
+          style="padding-bottom: 100%;">
+                                                <img class="product-image-photo"
+                          src="magento_63844/pub/media/catalog/product/cache/small_image/388x388/beff4985b56e3afdbeabfc89641a4582/k/r/kraus_c-gv-399-19mm-10sn_ladon_satin_nickel_2_.png"
+             width="388"
+             height="388"
+             alt="Kraus C-GV-399-19mm-10SN Ladon  Satin Nickel "/>
+                                            </span>
+                                                    </span>
+                                                </a>
+                                                <div class="product-item-details">
+                                                    <strong class="product-item-name">
+                                            <a title="Kraus C-GV-399-19mm-10SN Ladon  Satin Nickel "
+                                                           href="/magento_63844/kraus-c-gv-399-19mm-10sn-ladon-satin-nickel.html"
+                                                           class="product-item-link">
+                                                            Kraus C-GV-399-19mm-10SN Ladon...                                                        </a>
+                                        </strong>
+                                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="8">
+                                                        <span class="special-price">
+                                                <span class="price-container price-final_price tax weee"
+        >
+                                                    <span class="price-label">Special Price</span>
+                                                        <span id="old-price-8-widget-new-grid" data-price-amount="80" data-price-type="finalPrice" class="price-wrapper ">
+                                                        <span class="price">$80.00</span>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+                                                        <span class="old-price">
+                                                <span class="price-container price-final_price tax weee"
+        >
+                                                    <span class="price-label">Regular Price</span>
+                                                        <span id="old-price-8-widget-new-grid" data-price-amount="96" data-price-type="oldPrice" class="price-wrapper ">
+                                                        <span class="price">$96.00</span>
+                                                        </span>
+                                                        </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-item-actions">
+                                                        <div class="actions-primary">
+                                                            <div class="stock unavailable">
+                                                                <span>Out of stock</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="actions-secondary" data-role="add-to-links">
+                                                            <a href="#" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/wishlist\/index\/add\/","data":{"product":"8","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' class="action towishlist" data-action="add-to-wishlist" title="Add to Wish List">
+                                                                <span>Add to Wish List</span>
+                                                            </a>
+                                                            <a href="#" class="action tocompare" data-post='{"action":"https:\/\/ld-magento.template-help.com\/magento_63844\/catalog\/product_compare\/add\/","data":{"product":"8","uenc":"aHR0cHM6Ly9sZC1tYWdlbnRvLnRlbXBsYXRlLWhlbHAuY29tL21hZ2VudG9fNjM4NDQv"}}' title="Add to Compare">
+                                                                <span>Add to Compare</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/x-magento-init">
+                        { "*": { "parallax": [] } }
+                    </script>
+                    <style>
+                        .rd-parallax-inner {
+                            min-height: 200px;
+                        }
+                        .parallax-1 {
+                            margin-left: calc(50% - 50vw + 9px);
+                            margin-right: calc(50% - 50vw + 9px);
+                        }
+                    </style>
+                    <div class="parallax-container parallax-1">
+                        <section class="rd-parallax " data-agent=".parallax-1" data-on="false" data-md-on="true" style="visibility: hidden;">
+                            <div class="rd-parallax-layer " data-speed="0.1" data-offset="0" data-fade="false" data-direction="normal" data-type="media" data-url="/magento_63844/pub/media/parallax/images/parallax.jpg"></div>
+                            <div class="rd-parallax-layer " data-speed="0.1" data-offset="0" data-fade="false" data-direction="normal" data-type="html">
+                                <div class="text-layout">
+                                    <div class="parallax-block">
+                                        <div class="title-1">40
+                                            <span>%
+                                    <span>off</span>
+                                            </span>
+                                        </div>
+                                        <div class="title-2">your first</div>
+                                        <div class="title-3">purchase!</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>undefined</main>undefined
+        <div class="page-bottom">
+            <div class="block newsletter container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="newsletter-desc ">
+                            Subscribe to the Schapiro mailing list to receive updates on new arrivals, special offers and other discount information. </div>
+                    </div>
+                    <div class="content  col-md-7">
+                        <form class="form subscribe" novalidate action="/magento_63844/newsletter/subscriber/new/" method="post" data-mage-init='{"validation": {"errorClass": "mage-error"}}' id="newsletter-validate-detail">
+                            <div class="field newsletter">
+                                <div class="control">
+                                    <input name="email" type="email" id="newsletter" placeholder="Enter your email address" data-validate="{required:true, 'validate-email':true}" />
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <button class="action subscribe primary" title="Subscribe" type="submit">
+                                    <span>Subscribe</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>undefined</div>undefined
+        <script type="text/x-magento-init">
+            { "*": { "theme": {} } }
+        </script>undefined
+        <script>
+            require.config({
+                deps: [
+                    'jquery',
+                    'mage/translate',
+                    'jquery/jquery-storageapi'
+                ],
+                callback: function($) {
+                    'use strict';
+
+                    var dependencies = [],
+                        versionObj;
+
+                    $.initNamespaceStorage('mage-translation-storage');
+                    $.initNamespaceStorage('mage-translation-file-version');
+                    versionObj = $.localStorage.get('mage-translation-file-version');
+
+                    if (versionObj.version !== '064e0e2762ff8e905e4304c236ebf0c2ab5eb4d3') {
+                        dependencies.push(
+                            'text!js-translation.json'
+                        );
+
+                    }
+
+                    require.config({
+                        deps: dependencies,
+                        callback: function(string) {
+                            if (typeof string === 'string') {
+                                $.mage.translate.add(JSON.parse(string));
+                                $.localStorage.set('mage-translation-storage', string);
+                                $.localStorage.set(
+                                    'mage-translation-file-version', {
+                                        version: '064e0e2762ff8e905e4304c236ebf0c2ab5eb4d3'
+                                    }
+                                );
+                            } else {
+                                $.mage.translate.add($.localStorage.get('mage-translation-storage'));
+                            }
+                        }
+                    });
+                }
+            });
+        </script>undefined
+        <script type="text/x-magento-init">
+            { "*": { "mage/cookies": { "expires": null, "path": "/magento_63844", "domain": ".ld-magento.template-help.com", "secure": false, "lifetime": "3600" } } }
+        </script>undefined
+        <noscript>
+            <div class="message global noscript">
+                <div class="content">
+                    <p>
+                        <strong>JavaScript seems to be disabled in your browser.</strong>
+                        <span>For the best experience on our site, be sure to turn on Javascript in your browser.</span>
+                    </p>
+                </div>
+            </div>undefined</noscript>undefined
+        <script type="text/x-magento-init">
+            { "body": { "ajaxWishlist": {"isShowSpinner":true,"isShowSuccessMessage":true,"successMessageText":"Product {product.name} has been added to your wishlist.","customerLoginUrl":"https:\/\/ld-magento.template-help.com\/magento_63844\/customer\/account\/login\/"} } }
+        </script>undefined
+        <script type="text/x-magento-init">
+            { ".newsletter-popup": { "newsletterPopup": {"customClass":"","timeout":0,"isShowOnStartup":true,"isShowOnFooter":false,"title":"","content":"Subscribe to the Schapiro mailing list to receive updates on new arrivals, special offers and other discount information.","submit":"Subscribe","cancel":null,"socialLinks":[]} } }
+        </script>undefined
+        <div class="newsletter-popup" style="display:none;">
+            <div class="block newsletter">
+                <form class="form subscribe" novalidate action="/magento_63844/newsletter/subscriber/new/" method="post" data-mage-init='{"validation": {"errorClass": "mage-error"}}' id="newsletter-validate-detail">
+                    <div class="field newsletter">
+                        <div class="control">
+                            <input name="email" type="email" id="newsletter-59c12118c55fd" placeholder="Enter your email address" data-validate="{required:true, 'validate-email':true}" />
+                        </div>
+                    </div>
+                </form>
+            </div>undefined</div>undefined
+        <script type="text/x-magento-init">
+            {"*": {"googleMapOptions": {"pluginPageData":{"contacts":{"width":"100%","height":"300","show_on":null,"selector":null},"api":null}}}}
+        </script>undefined
+        <script type="text/javascript">
+            require([
+                'jquery',
+                'googleMapPagePlugin'
+            ], function($) {
+                $(window).on('load.map', function() {
+                    loadScript();
+                })
+            });
+
+            function loadScript() {
+                var script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "http://maps.googleapis.com/maps/api/js?sensor=true&callback=initialize";
+                document.body.appendChild(script);
+            }
+
+            function initialize() {
+
+                var mapOptions = {
+                    center: new google.maps.LatLng(40.5899796, -73.8820439),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    zoom: 8,
+                    disableDefaultUI: 0,
+                    scrollwheel: 1,
+                    draggable: 1,
+                };
+                var element = document.getElementById("map_canvas_contacts");
+                if (element) {
+                    var map_contacts = new google.maps.Map(element, mapOptions);
+                }
+
+            }
+        </script>undefined
+        <footer class="page-footer">
+            <div class="container content footer">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-col">
+                            <h4>Categories</h4>
+                            <div class="footer-col-content">
+                                <ul>
+                                    <li>
+                                        <a href="/magento_63844/water-heaters.html/">Water heaters</a>
+                                    </li>
+                                    <li>
+                                        <a href="/magento_63844/pipes-fittings-valves.html/">Pipes, Fittings & Valves</a>
+                                    </li>
+                                    <li>
+                                        <a href="/magento_63844/drain-openers.html/">Drain Openers</a>
+                                    </li>
+                                    <li>
+                                        <a href="/magento_63844/plumbing-tools-accessories.html/">Plumbing Tools & Accessories</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-col">
+                            <h4>Information</h4>
+                            <div class="footer-col-content">
+                                <ul>
+                                    <li>
+                                        <a href="/magento_63844/about-us">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="/magento_63844/customer-service">Customer Service</a>
+                                    </li>
+                                    <li>
+                                        <a href="/magento_63844/template-settings">Template Settings</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer links">
+                                    <li class="nav item">
+                                        <a href="/magento_63844/privacy-policy-cookie-restriction-mode/">Privacy Policy</a>
+                                    </li>
+                                    <li class="nav item">
+                                        <a href="/magento_63844/search/term/popular/">Search Terms</a>
+                                    </li>
+                                    <li class="nav item">
+                                        <a href="/magento_63844/contact/">Contact Us</a>
+                                    </li>
+                                    <li class="nav item">
+                                        <a href="/magento_63844/sales/guest/form/">Orders and Returns</a>
+                                    </li>
+                                    <li class="nav item">
+                                        <a href="/magento_63844/catalogsearch/advanced/" data-action="advanced-search">Advanced Search</a>
+                                    </li>
+                                    <li class="nav item">
+                                        <a href="/magento_63844/newsletter/manage/index/" class="newsletter-popup-link">Newsletter Subscription</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-col">
+                            <h4>Why buy from us</h4>
+                            <div class="footer-col-content">
+                                <ul>
+                                    <li>
+                                        <a href="#">Shipping & Returns</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Secure Shopping</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">International Shipping</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Affiliates</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Group Sales</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-col">
+                            <h4>My account</h4>
+                            <div class="footer-col-content">
+                                <ul>
+                                    <li>
+                                        <a href="/magento_63844/customer/account/login/">Sign In</a>
+                                    </li>
+                                    <li>
+                                        <a href="/magento_63844/checkout/cart/">View Cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="/magento_63844/wishlist/">My Wishlist</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Track My Order</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Help</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-panel">
+                <div class="container">
+                    <style>
+                        @media (min-width: 768px) {
+                            ul.social-links.position-footer {
+                                text-align: left;
+                            }
+                        }
+                    </style>
+                    <ul class="social-links position-footer type-font">
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fa fa fa-instagram" style="font-size: 18px; line-height: 20px;"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fa fa fa-twitter" style="font-size: 18px; line-height: 20px;"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fa fa fa-facebook" style="font-size: 18px; line-height: 20px;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <small class="copyright">
+            <span>&copy; 2017 Magento Demo Store. All Rights Reserved.</span>
+        </small>
+                </div>
+            </div>undefined</footer>undefined
+        <div class="scrollToTop">To Top</div>undefined</div>undefined</body>undefined
+<!-- Google Tag Manager -->undefined
+<noscript>undefined
+    <iframe src="/www.googletagmanager.com/ns.html_1290124584.jpg" height="0" width="0" style="display:none;visibility:hidden"></iframe>undefined</noscript>undefined
+<script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = '/www.googletagmanager.com/gtm.js' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-P9FT69');
+</script>undefined
+<!-- End Google Tag Manager -->undefined
+
+</html>
